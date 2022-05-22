@@ -9,7 +9,41 @@ import java.util.Scanner;
 public class ProjetoIntegrador {
 
     public static void main(String[] args) {
-        
+        System.out.println("Aqui começa a nossa história.");
+        System.out.println("...");
+        System.out.println("Em uma era antiga onde homens usavam espadas, armaduras e cavalos, existiam 02 reinos.\n"
+                + "Um desses reinos é o Reino Eterno.\n"
+                + "Esse reino era bastante movimentado, porém para entrar ao reino, cada indivíduo tinha que ter pré-requisitos.\n"
+                + "Um desses pré=requisitos é nunca ter se aliado a reinos conquistadores de terras, os quais valorizam a riqueza maior que a vida individual.\n"
+                + "Em torno do reino tinham fortaleza feita de pedra, com altas defesas para inibir qualquer invasor.\n");
+
+        System.out.println("O Reino Agricultor era onde os acordos não existiam eram ganancioso e rancorosos.\n"
+                + "Domintantes de grandes lotes, eles se vangloriavam de cada território conquistado, terras planas e férteis eram suas preferidas.\n"
+                + "Seu reino era cercado por muros de pedra com um toque de ouro nas pontas.\n"
+                + "Haviam grandes negociações dentro das cidades, onde as pessoas possuíam vestimentas e características camponesas.\n");
+
+        System.out.println("Há décadas o reino Agricultor invadiu o Reino Eterno, isso porque queriam riquezas e territórios.\n"
+                + "Durante o confronto houve muito sangue derramado, incluindo o antigo rei do Reino Eterno.\n"
+                + "O Reino Eterno levou anos para pensar em uma vingaça e como iriam reconstruir sua honra e glória depois de terem sidos devastados pelos ataques rivais.\n"
+                + "Após anos de treinamentos e adaptação com novas tropas, apresentaram diante do novo rei uma ideia de vingaça.\n"
+                + "Durante todo o tempo de planejamento, enviaram um espião ao reino rival, para procurar brechas na guarda, quantidades de soldados e armamentos.\n"
+                + "Após o infiltrado voltar com a planta do castelo, descobriam que dentro do reino rival havia uma grande área comercial onde diversas pessoas entravam e saiam a todo tempo.\n"
+                + "Tendo muralhas grandiosas com defesas compostas por arqueiros, um portão fortificado, soldados circulando a todo tempo e no final da rua ficava o castelo.\n"
+                + "Alguns dias se passaram, após terem analisado e estudado formas de ataque, chegou o grande dia do Reino Eterno ter sua vingaça.\n"
+                + "Na frente foram os exércitos mais os arqueiros e cavalaria, logo atrás muitos soldados aliados.\n"
+                + "O reino Eterno levou em média 4 dias para chegar ao reino rival, durante esse percuso encontraram poções e recursos para abrigos e alimentação.\n"
+                + "Se aproximando o reino inimigo, logo perceberam que o Reino Eterno se aproximavam, rapidamente mandaram um ancião para um possível acordo, oferecendo riquezas e parte da colheita.\n"
+                + "Porém isso não foi o bastante para eles, pois o Reino Eterno queria vingaça, guerreiros com sede de guerra, de ouvir barulhos de espadas cortando, sons tenebrosos da batalha e então recusaram a proposta.\n"
+                + "Chegando próximo ao reino inimigo, foi ordenado à um dos arqueiros que atirasse uma flexão no ancião inimigo, para msotrar que nada importava para eles, apenas queriam vingança.\n"
+                + "Com isso, prosseguiram para a invasão ao reino, usamos escadas grandes para subir os muros e um grande tronco para quebrar o portão.\n"
+                + "Entraram no reino e lá houve espadas cortando corpos e batendo, durante todo esse processo conquistaram grande parte do exército inimigo.\n"
+                + "Saquearam as casas e queimavam algumas do reino inimigo.\n"
+                + "Durante toda essa rebelião, pegaram a rainha inimiga e fizeram chantagens para o rei inimigo aparecer.\n"
+                + "o rei logo apareceu, e então o rei fez uma proposta de sua vida pela a da rainha, e então o Reino Eterno aceitou, só para ir até eles.\n"
+                + "No final de toda guerra, o Reino Eterno dominou o reino inimigo, baniram a rainha para terras bem distantes. E a glória reinou.\n"
+                + "Que a força e a sabedoria esteja com você, qualquer dúvida pense bem antes de agir, boa sorte!");
+
+        System.out.printf(".\n.\n.\n");
         System.out.println("Primeiramente... como deseja ser chamado?");
         System.out.println("Digite seu Nickname: ");
         String nomeJogador = entradaDadosString();
