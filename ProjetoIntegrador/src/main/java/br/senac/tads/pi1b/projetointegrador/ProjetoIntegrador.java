@@ -45,7 +45,7 @@ public class ProjetoIntegrador {
         System.out.printf(".\n.\n.\n");
         System.out.println("Primeiramente... como deseja ser chamado?");
         System.out.println("Digite seu Nickname: ");
-        String nomeJogador = entradaDadosString();
+        String nomeJogador = entradaString();
         System.out.println("Olá " + "'" + nomeJogador + "'" + ", você terá uma aventura incrível!!! ");
         System.out.println("Nesse primeiro momento do jogo você precisará escolher ");
         System.out.println("um personagem, cada um com sua classe, cada um com suas ");
@@ -95,9 +95,9 @@ public class ProjetoIntegrador {
                 System.out.println("aprender os conceitos basicos do jogo, tais como andar, ");
                 System.out.println("escolher itens dropados pelos monstros da floresta e usar ");
                 System.out.println("seus equipamentos. ");
-                System.out.println("para andar pelo jogo, digitite norte, sul, leste ou oeste ");
+                System.out.println("para andar pelo jogo, digite norte ou sul: ");
                 System.out.println("tente se movimentar, digitando alguns dos comandos acima:");
-                String movimento = entradaDadosString();
+                String movimento = entradaString();
 
                 if (movimento.equalsIgnoreCase("norte")) {
                     System.out.println("Você andou um passo para o norte");
@@ -126,9 +126,6 @@ public class ProjetoIntegrador {
 
                 } else if (movimento.equalsIgnoreCase("sul")) {
                     System.out.println("Você andou um passo para o sul");
-                } else if (movimento.equalsIgnoreCase("leste")) {
-                    System.out.println("Você andou um passo para o leste");
-                } else if (movimento.equalsIgnoreCase("oeste")) {
                 }
 
                 break;
@@ -140,8 +137,8 @@ public class ProjetoIntegrador {
                 System.out.println("aprender os conceitos basicos do jogo, tais como andar, ");
                 System.out.println("escolher itens dropados pelos monstros da floresta e usar ");
                 System.out.println("seus equipamentos. ");
-                System.out.println("para andar um passo, digitite note, sul, leste ou oeste ");
-                movimento = entradaDadosString();
+                System.out.println("para andar um passo, digite note ou sul: ");
+                movimento = entradaString();
 
                 if (movimento.equalsIgnoreCase("norte")) {
                     System.out.println("Você andou um passo para o norte");
@@ -160,18 +157,16 @@ public class ProjetoIntegrador {
                 System.out.println("aprender os conceitos basicos do jogo, tais como andar, ");
                 System.out.println("escolher itens dropados pelos monstros da floresta e usar ");
                 System.out.println("seus equipamentos. ");
-                System.out.println("para andar um passo, digitite note, sul, leste ou oeste ");
-                movimento = entradaDadosString();
+                System.out.println("para andar um passo, digite norte ou sul: ");
+                movimento = entradaString();
 
                 if (movimento.equalsIgnoreCase("norte")) {
                     System.out.println("Você andou um passo para o norte");
 
                 } else if (movimento.equalsIgnoreCase("sul")) {
                     System.out.println("Você andou um passo para o sul");
-                } else if (movimento.equalsIgnoreCase("leste")) {
-                    System.out.println("Você andou um passo para o leste");
-                } else if (movimento.equalsIgnoreCase("oeste")) {
-                }
+                } 
+                    
 
                 break;
             case 4:
@@ -180,28 +175,26 @@ public class ProjetoIntegrador {
                 System.out.println("aprender os conceitos basicos do jogo, tais como andar, ");
                 System.out.println("escolher itens dropados pelos monstros da floresta e usar ");
                 System.out.println("seus equipamentos. ");
-                System.out.println("para andar um passo, digitite note, sul, leste ou oeste ");
-                movimento = entradaDadosString();
+                System.out.println("para andar um passo, digite norte ou sul: ");
+                movimento = entradaString();
 
                 if (movimento.equalsIgnoreCase("norte")) {
                     System.out.println("Você andou um passo para o norte");
 
                 } else if (movimento.equalsIgnoreCase("sul")) {
                     System.out.println("Você andou um passo para o sul");
-                } else if (movimento.equalsIgnoreCase("leste")) {
-                    System.out.println("Você andou um passo para o leste");
-                } else if (movimento.equalsIgnoreCase("oeste")) {
-                }
+               
 
                 break;
-            case 5:
+                }
+                case 5:
                 System.out.println("LUTADOR SELECIONADO ");
                 System.out.println("Você nascera em um centro de treinamento para ");
                 System.out.println("aprender os conceitos basicos do jogo, tais como andar, ");
                 System.out.println("escolher itens dropados pelos monstros da floresta e usar ");
                 System.out.println("seus equipamentos. ");
-                System.out.println("para andar um passo, digigite norte ou sul: ");
-                movimento = entradaDadosString();
+                System.out.println("para andar um passo, digite norte ou sul: ");
+                movimento = entradaString();
 
                 if (movimento.equalsIgnoreCase("norte")) {
                     System.out.println("Você andou um passo para o norte");
@@ -232,8 +225,8 @@ public class ProjetoIntegrador {
                 System.out.println("aprender os conceitos basicos do jogo, tais como andar, ");
                 System.out.println("escolher itens dropados pelos monstros da floresta e usar ");
                 System.out.println("seus equipamentos. ");
-                System.out.println("para andar um passo, digigite norte ou sul: ");
-                movimento = entradaDadosString();
+                System.out.println("para andar um passo, digite norte ou sul: ");
+                movimento = entradaString();
 
                 if (movimento.equalsIgnoreCase("norte")) {
                     System.out.println("Você andou um passo para o norte");
@@ -320,7 +313,7 @@ public class ProjetoIntegrador {
         }
     }
 
-    static String entradaDadosString() {
+    static String entradaString(){
         Scanner input = new Scanner(System.in);
         String opcaoString = input.next();
         return opcaoString;
