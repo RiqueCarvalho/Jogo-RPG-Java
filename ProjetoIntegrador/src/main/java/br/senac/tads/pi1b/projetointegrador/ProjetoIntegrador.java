@@ -6,15 +6,15 @@ public class ProjetoIntegrador {
 
     public static void main(String[] args) {
 
-      Scanner input = new Scanner(System.in);
-        
-      int menu;
+        Scanner input = new Scanner(System.in);
+
+        int menu;
+
         do {
             System.out.println("1-JOGAR");
             System.out.println("2-CRÉDITOS");
             System.out.println("Opção: ");
 
-            
             menu = input.nextInt();
 
             if (menu == 1) {
@@ -28,9 +28,7 @@ public class ProjetoIntegrador {
 
                 System.out.println("O outro era o Reino Agricultor, que por sua vez era onde os acordos não existiam eram ganancioso e rancorosos.\n"
                         + "Domintantes de grandes lotes, eles se vangloriavam de cada território conquistado, terras planas e férteis eram suas preferidas,\n"
-                        + "seu reino era cercado por muros de pedra com um toque de ouro nas pontas, haviam grandes negociações dentro das cidades, onde as pessoas\n "
-                        + "possuíam vestimentas e características camponesas.\n");
-
+                        + "seu reino era cercado por muros de pedra com um toque de ouro nas pontas, haviam grandes negociações dentro das cidades, onde as pessoas\n ");
                 System.out.println("Há décadas atras o reino Agricultor invadiu o Reino Eterno, isso porque queriam riquezas e conquistar seu território,\n"
                         + "durante o confronto houve muito sangue derramado, incluindo o antigo rei do Reino Eterno.\n"
                         + "O Reino Eterno levou anos para pensar em uma vingaça e como iriam reconstruir sua honra e glória depois de terem sidos devastados pelos ataques rivais.\n"
@@ -61,7 +59,7 @@ public class ProjetoIntegrador {
                 System.out.println("um personagem, cada um com sua classe, cada um com suas ");
                 System.out.println("particularidades, entre as opções temos: ");
 
-                
+               
 
                     System.out.println("1 - Guerreiro:");
                     System.out.println("A classe guerreiro tem como arma uma grande espada, tem bastante dano ");
@@ -145,11 +143,15 @@ public class ProjetoIntegrador {
                             int vidaLadrao,
                              habilidade1Ladrao,
                              habilidade2Ladrao,
+                             javalis,
+                             javalisatk,
                              guarda;
                             vidaLadrao = 50;
                             habilidade1Ladrao = 15;
                             habilidade2Ladrao = 5;
                             guarda = 20;
+                            javalis = 10;
+                            javalisatk = 10;
 
                             System.out.println("LADRAO SELECIONADO ");
                             System.out.println("Você nascera em um centro de treinamento para ");
@@ -264,13 +266,54 @@ public class ProjetoIntegrador {
 
                                 if (opcao == 1) {
                                     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+                                    
                                     System.out.println("Parabens por finalizar o jogo.");
                                     System.exit(0);
                                 }
 
                             } else if (movimento.equalsIgnoreCase("sul")) {
                                 System.out.println("Você andou um passo para o sul");
+                                System.out.println(" - O que é aquilo? uma árvore gigante!!!");
+                                System.out.println(" - Tem varias maças frescas nela, será que consigo pega-las? ");
+                                System.out.println("1 - Tentar escalar a árvore");
+                                System.out.println("2 - Usar uma faca para acertar a maça");
+
+                                int decisao = entradaDadosInt();
+                                if (decisao == 1) {
+                                    System.out.println(" - boa, foi moleza!");
+                                    System.out.println(" - ela podia ser maior.");
+                                } else if (decisao == 2) {
+                                    System.out.println(" - Ops, acabei acertando um inimigo sem querer !!! ");
+                                    System.out.println(" - javalis sairam de trás dos arbustos, precisamos derrota-los ");
+                                    System.out.println(" ** Os lobos tem 30 de vida e 10 dano de atk ** ");
+                                    System.out.println("1 - faquinha");
+                                    System.out.println("2 - Soco");
+
+                                    do {
+                                        combate = entradaDadosInt();
+
+                                        if (combate == 1) {
+                                            System.out.println("Sua vida atual: " + vidaLadrao);
+                                            javalis = javalis - habilidade1Ladrao;
+                                            System.out.println("o javali revidou o seu ataque");
+                                            vidaLadrao = vidaLadrao - 10;
+                                            System.out.println("Sua vida atual: " + vidaLadrao);
+                                            System.out.println("Vida do javali: " + javalis);
+
+                                        } else if (combate == 2) {
+
+                                            System.out.println("Sua vida atual: " + vidaLadrao);
+                                            javalis = javalis - habilidade2Ladrao;
+                                            System.out.println("o javali revidou o seu ataque");
+                                            vidaLadrao = vidaLadrao - 10;
+                                            System.out.println("Sua vida atual: " + vidaLadrao);
+                                            System.out.println("Vida do javali: " + javalis);
+                                        }
+
+                                    } while (javalis > 0);
+                                    System.out.println("Olha só, conseguimos derrotar os javalis e ainda garantimos nossas maças !!!");
+                                    }
+                                break;
                             }
 
                             break;
@@ -297,7 +340,7 @@ public class ProjetoIntegrador {
                             System.out.println("aprender os conceitos basicos do jogo, tais como andar, ");
                             System.out.println("escolher itens dropados pelos monstros da floresta e usar ");
                             System.out.println("seus equipamentos. ");
-                            System.out.println("para andar um passo, digite norte ou sul:");
+                            System.out.println("para andar um passo, digite norte ou sul: ");
                             movimento = entradaDadosString();
 
                             if (movimento.equalsIgnoreCase("norte")) {
@@ -426,9 +469,11 @@ public class ProjetoIntegrador {
                                     } while (lobo > 0);
                                     System.out.println("Olha só, conseguimos derrotar os lobos e ainda garantimos nossas maças !!!");
                                 }
-                                break;
+                                break;               
                             }
                     }
+
+        
 
                 } else if (menu == 2) {
                 System.out.println("Muito Obrigado por jogar o nosso jogo.\nEsse jogo foi desenvolvido e criado pelos alunos da turma B,\nEric Alves Melo\nFelipe Müller da Costa\nGuilherme Mikami\nHenrique Dos Santos Carvalho");
@@ -440,10 +485,12 @@ public class ProjetoIntegrador {
 
             }
 
-            } while (menu > 2 || menu < 1);
-        
+            }
 
-    }
+            while (menu > 2 || menu < 1);
+        }
+
+     
 
     static String entradaDadosString() {
         Scanner input = new Scanner(System.in);
