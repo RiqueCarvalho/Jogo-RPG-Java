@@ -22,33 +22,30 @@ public class ProjetoIntegrador {
                 System.out.println("Aqui começa a nossa história.");
                 System.out.println("...");
                 System.out.println("Em uma era antiga onde homens usavam espadas, armaduras e cavalos, existiam 02 reinos.\n"
-                        + "Um desses reinos é o Reino Eterno.\n"
-                        + "Esse reino era bastante movimentado, porém para entrar ao reino, cada indivíduo tinha que ter pré-requisitos.\n"
-                        + "Um desses pré=requisitos é nunca ter se aliado a reinos conquistadores de terras, os quais valorizam a riqueza maior que a vida individual.\n"
-                        + "Em torno do reino tinham fortaleza feita de pedra, com altas defesas para inibir qualquer invasor.\n");
+                        + "Um desses reinos é o Reino Eterno, esse reino era bastante movimentado, porém para entrar ao reino, cada indivíduo tinha que ter pré-requisitos.\n"
+                        + "um desses pré-requisitos é nunca ter se aliado a reinos conquistadores de terras, os quais valorizam a riqueza maior que a vida individual,\n"
+                        + "em torno do reino tinham fortaleza feita de pedra, com altas defesas para inibir qualquer invasor.\n");
 
-                System.out.println("O Reino Agricultor era onde os acordos não existiam eram ganancioso e rancorosos.\n"
-                        + "Domintantes de grandes lotes, eles se vangloriavam de cada território conquistado, terras planas e férteis eram suas preferidas.\n"
-                        + "Seu reino era cercado por muros de pedra com um toque de ouro nas pontas.\n"
-                        + "Haviam grandes negociações dentro das cidades, onde as pessoas possuíam vestimentas e características camponesas.\n");
-
-                System.out.println("Há décadas o reino Agricultor invadiu o Reino Eterno, isso porque queriam riquezas e territórios.\n"
-                        + "Durante o confronto houve muito sangue derramado, incluindo o antigo rei do Reino Eterno.\n"
+                System.out.println("O outro era o Reino Agricultor, que por sua vez era onde os acordos não existiam eram ganancioso e rancorosos.\n"
+                        + "Domintantes de grandes lotes, eles se vangloriavam de cada território conquistado, terras planas e férteis eram suas preferidas,\n"
+                        + "seu reino era cercado por muros de pedra com um toque de ouro nas pontas, haviam grandes negociações dentro das cidades, onde as pessoas\n ");
+                System.out.println("Há décadas atras o reino Agricultor invadiu o Reino Eterno, isso porque queriam riquezas e conquistar seu território,\n"
+                        + "durante o confronto houve muito sangue derramado, incluindo o antigo rei do Reino Eterno.\n"
                         + "O Reino Eterno levou anos para pensar em uma vingaça e como iriam reconstruir sua honra e glória depois de terem sidos devastados pelos ataques rivais.\n"
-                        + "Após anos de treinamentos e adaptação com novas tropas, apresentaram diante do novo rei uma ideia de vingaça.\n"
-                        + "Durante todo o tempo de planejamento, enviaram um espião ao reino rival, para procurar brechas na guarda, quantidades de soldados e armamentos.\n"
-                        + "Após o infiltrado voltar com a planta do castelo, descobriam que dentro do reino rival havia uma grande área comercial onde diversas pessoas entravam e saiam a todo tempo.\n"
-                        + "Tendo muralhas grandiosas com defesas compostas por arqueiros, um portão fortificado, soldados circulando a todo tempo e no final da rua ficava o castelo.\n"
-                        + "Alguns dias se passaram, após terem analisado e estudado formas de ataque, chegou o grande dia do Reino Eterno ter sua vingaça.\n"
-                        + "Na frente foram os exércitos mais os arqueiros e cavalaria, logo atrás muitos soldados aliados.\n"
-                        + "O reino Eterno levou em média 4 dias para chegar ao reino rival, durante esse percuso encontraram poções e recursos para abrigos e alimentação.\n"
-                        + "Se aproximando o reino inimigo, logo perceberam que o Reino Eterno se aproximavam, rapidamente mandaram um ancião para um possível acordo, oferecendo riquezas e parte da colheita.\n"
-                        + "Porém isso não foi o bastante para eles, pois o Reino Eterno queria vingaça, guerreiros com sede de guerra, de ouvir barulhos de espadas cortando, sons tenebrosos da batalha e então recusaram a proposta.\n"
-                        + "Chegando próximo ao reino inimigo, foi ordenado à um dos arqueiros que atirasse uma flexão no ancião inimigo, para msotrar que nada importava para eles, apenas queriam vingança.\n"
-                        + "Com isso, prosseguiram para a invasão ao reino, usamos escadas grandes para subir os muros e um grande tronco para quebrar o portão.\n"
+                        + "Após anos de treinamentos e adaptação com novas tropas, apresentaram diante do novo rei uma ideia de vingaça,\n"
+                        + "durante todo o tempo de planejamento, enviaram um espião ao reino rival, para procurar brechas na guarda, saber a quantidades de soldados e armamentos\n"
+                        + "que tinham protegendo seu reino, após o infiltrado voltar com a planta do castelo, descobriam que dentro do reino rival havia uma grande área comercial,\n"
+                        + "onde diversas pessoas entravam e saiam a todo tempo, tendo muralhas grandiosas com defesas compostas por arqueiros, um portão fortificado, soldados circulando\n "
+                        + "a todo tempo e no final da rua ficava o castelo. Alguns dias se passaram, após terem analisado e estudado formas de ataque, chegou o grande dia do Reino Eterno\n"
+                        + "ter sua vingaça. Na frente foram os exércitos mais os arqueiros e cavalaria, logo atrás muitos soldados aliados.\n"
+                        + "O reino Eterno levou 4 dias para chegar ao reino rival, durante esse percuso encontraram poções e recursos para abrigos e alimentação.\n"
+                        + "Se aproximando o reino inimigo, o reino Agricultor precebeu movimentações estranhas e rapidamente mandaram um ancião para um possível acordo,\n"
+                        + "oferecendo riquezas e parte da colheita para que fossem embora. Porém isso não foi o bastante para eles, pois o Reino Eterno queria vingaça\n"
+                        + "guerreiros com sede de guerra, de ouvir barulhos de espadas cortando, sons tenebrosos da batalha e então recusaram a proposta.\n"
+                        + "Chegando próximo ao reino inimigo, foi ordenado à um dos arqueiros que atirasse uma flechão no ancião inimigo, para msotrar que nada importava para eles\n"
+                        + "apenas queriam vingança. Com isso, prosseguiram para a invasão ao reino, usamos escadas grandes para subir os muros e um grande tronco para quebrar o portão.\n"
                         + "Entraram no reino e lá houve espadas cortando corpos e batendo, durante todo esse processo conquistaram grande parte do exército inimigo.\n"
-                        + "Saquearam as casas e queimavam algumas do reino inimigo.\n"
-                        + "Durante toda essa rebelião, pegaram a rainha inimiga e fizeram chantagens para o rei inimigo aparecer.\n"
+                        + "Saquearam as casas e queimavam algumas do reino inimigo, durante toda essa rebelião, pegaram a rainha inimiga e fizeram chantagens para o rei inimigo aparecer.\n"
                         + "o rei logo apareceu, e então o rei fez uma proposta de sua vida pela a da rainha, e então o Reino Eterno aceitou, só para ir até eles.\n"
                         + "No final de toda guerra, o Reino Eterno dominou o reino inimigo, baniram a rainha para terras bem distantes. E a glória reinou.\n"
                         + "Que a força e a sabedoria esteja com você, qualquer dúvida pense bem antes de agir, boa sorte!");
@@ -146,11 +143,15 @@ public class ProjetoIntegrador {
                             int vidaLadrao,
                              habilidade1Ladrao,
                              habilidade2Ladrao,
+                             javalis,
+                             javalisatk,
                              guarda;
                             vidaLadrao = 50;
                             habilidade1Ladrao = 15;
                             habilidade2Ladrao = 5;
                             guarda = 20;
+                            javalis = 10;
+                            javalisatk = 10;
 
                             System.out.println("LADRAO SELECIONADO ");
                             System.out.println("Você nascera em um centro de treinamento para ");
@@ -272,6 +273,47 @@ public class ProjetoIntegrador {
 
                             } else if (movimento.equalsIgnoreCase("sul")) {
                                 System.out.println("Você andou um passo para o sul");
+                                System.out.println(" - O que é aquilo? uma árvore gigante!!!");
+                                System.out.println(" - Tem varias maças frescas nela, será que consigo pega-las? ");
+                                System.out.println("1 - Tentar escalar a árvore");
+                                System.out.println("2 - Usar uma faca para acertar a maça");
+
+                                int decisao = entradaDadosInt();
+                                if (decisao == 1) {
+                                    System.out.println(" - boa, foi moleza!");
+                                    System.out.println(" - ela podia ser maior.");
+                                } else if (decisao == 2) {
+                                    System.out.println(" - Ops, acabei acertando um inimigo sem querer !!! ");
+                                    System.out.println(" - javalis sairam de trás dos arbustos, precisamos derrota-los ");
+                                    System.out.println(" ** Os lobos tem 30 de vida e 10 dano de atk ** ");
+                                    System.out.println("1 - faquinha");
+                                    System.out.println("2 - Soco");
+
+                                    do {
+                                        combate = entradaDadosInt();
+
+                                        if (combate == 1) {
+                                            System.out.println("Sua vida atual: " + vidaLadrao);
+                                            javalis = javalis - habilidade1Ladrao;
+                                            System.out.println("o javali revidou o seu ataque");
+                                            vidaLadrao = vidaLadrao - 10;
+                                            System.out.println("Sua vida atual: " + vidaLadrao);
+                                            System.out.println("Vida do javali: " + javalis);
+
+                                        } else if (combate == 2) {
+
+                                            System.out.println("Sua vida atual: " + vidaLadrao);
+                                            javalis = javalis - habilidade2Ladrao;
+                                            System.out.println("o javali revidou o seu ataque");
+                                            vidaLadrao = vidaLadrao - 10;
+                                            System.out.println("Sua vida atual: " + vidaLadrao);
+                                            System.out.println("Vida do javali: " + javalis);
+                                        }
+
+                                    } while (javalis > 0);
+                                    System.out.println("Olha só, conseguimos derrotar os javalis e ainda garantimos nossas maças !!!");
+                                    }
+                                break;
                             }
 
                             break;
@@ -289,9 +331,6 @@ public class ProjetoIntegrador {
 
                             } else if (movimento.equalsIgnoreCase("sul")) {
                                 System.out.println("Você andou um passo para o sul");
-                            } else if (movimento.equalsIgnoreCase("leste")) {
-                                System.out.println("Você andou um passo para o leste");
-                            } else if (movimento.equalsIgnoreCase("oeste")) {
                             }
 
                             break;
@@ -309,9 +348,6 @@ public class ProjetoIntegrador {
 
                             } else if (movimento.equalsIgnoreCase("sul")) {
                                 System.out.println("Você andou um passo para o sul");
-                            } else if (movimento.equalsIgnoreCase("leste")) {
-                                System.out.println("Você andou um passo para o leste");
-                            } else if (movimento.equalsIgnoreCase("oeste")) {
                             }
 
                             break;
@@ -329,9 +365,6 @@ public class ProjetoIntegrador {
 
                             } else if (movimento.equalsIgnoreCase("sul")) {
                                 System.out.println("Você andou um passo para o sul");
-                            } else if (movimento.equalsIgnoreCase("leste")) {
-                                System.out.println("Você andou um passo para o leste");
-                            } else if (movimento.equalsIgnoreCase("oeste")) {
                             }
 
                             break;
@@ -354,7 +387,7 @@ public class ProjetoIntegrador {
                             System.out.println("escolher itens dropados pelos monstros da floresta e usar ");
                             System.out.println("seus equipamentos. ");
                             System.out.println("para andar um passo, digite norte ou sul: ");
-                            movimento = entradaString();
+                            movimento = entradaDadosString();
 
                             if (movimento.equalsIgnoreCase("norte")) {
                                 System.out.println("Você andou um passo para o norte");
@@ -469,12 +502,6 @@ public class ProjetoIntegrador {
         Scanner input = new Scanner(System.in);
         int opcao = input.nextInt();
         return opcao;
-    }
-    
-        static String entradaString(){
-        Scanner input = new Scanner(System.in);
-        String opcaoString = input.next();
-        return opcaoString;
     }
 
 }
