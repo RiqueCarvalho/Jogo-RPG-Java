@@ -10,6 +10,7 @@ public class ProjetoIntegrador {
 
         int menu;
 
+        
         do {
             System.out.println("1-JOGAR");
             System.out.println("2-CRÉDITOS");
