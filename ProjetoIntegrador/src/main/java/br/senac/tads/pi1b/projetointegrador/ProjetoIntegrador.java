@@ -10,7 +10,6 @@ public class ProjetoIntegrador {
 
         int menu;
 
-        
         do {
             System.out.println("1-JOGAR");
             System.out.println("2-CRÉDITOS");
@@ -60,8 +59,6 @@ public class ProjetoIntegrador {
                 System.out.println("um personagem, cada um com sua classe, cada um com suas ");
                 System.out.println("particularidades, entre as opções temos: ");
 
-               
-
                     System.out.println("1 - Guerreiro:");
                     System.out.println("A classe guerreiro tem como arma uma grande espada, tem bastante dano ");
                     System.out.println("e bastante resistência, é ruim contra inimigos que atacam de longa distância.");
@@ -92,52 +89,94 @@ public class ProjetoIntegrador {
                     switch (opcao) {
 
                         case 1:
-                            int vidaGuerreiro,
-                             habilidade1Guerreiro,
-                             goblin;
-                            vidaGuerreiro = 100;
-                            habilidade1Guerreiro = 20;
-                            goblin = 10;
+                        int vidaGuerreiro,
+                         habilidade1Guerreiro,
+                         habilidade2Guerreiro,
+                         goblin,
+                         guardiao;
+                        vidaGuerreiro = 250;
+                        habilidade1Guerreiro = 20;
+                        habilidade2Guerreiro = 10;
+                        goblin = 10;
+                        guardiao = 50;
 
-                            int combate;
+                        int combate;
 
-                            System.out.println("GUERREIRO SELECIONADO ");
-                            System.out.println("Você nascera em um centro de treinamento para ");
-                            System.out.println("aprender os conceitos basicos do jogo, tais como andar, ");
-                            System.out.println("escolher itens dropados pelos monstros da floresta e usar ");
-                            System.out.println("seus equipamentos. ");
-                            System.out.println("para andar pelo jogo, digite norte ou sul: ");
-                            System.out.println("tente se movimentar, digitando alguns dos comandos acima:");
-                            String movimento = entradaDadosString();
+                        System.out.println("GUERREIRO SELECIONADO ");
+                        System.out.println("Poderes do guerreiro: ");
+                        System.out.println("* Espada Gloriósa: causa 20 de dano porém recebe 5 de dano ao conjurar;");
+                        System.out.println("* Escudo Divino: causa 10 de dano. Não recebe dano ao conjurar.");
+                        System.out.println("Você nascera em um centro de treinamento para ");
+                        System.out.println("aprender os conceitos basicos do jogo, tais como andar, ");
+                        System.out.println("escolher itens dropados pelos monstros da floresta e usar ");
+                        System.out.println("seus equipamentos. ");
+                        System.out.println("para andar pelo jogo, digite norte ou sul: ");
+                        System.out.println("tente se movimentar, digitando alguns dos comandos acima:");
+                        String movimento = entradaDadosString();
 
-                            if (movimento.equalsIgnoreCase("norte")) {
-                                System.out.println("Você andou um passo para o norte");
-                                System.out.println("encontrou um goblin fraco, com 10 de vida, para lutar contra ele digite ");
-                                System.out.println(" '1' ou para sair, digite '2'");
-                                opcao = entradaDadosInt();
+                        if (movimento.equalsIgnoreCase("norte")) {
+                            System.out.println("Você andou um passo para o norte");
+                            System.out.println("encontrou um goblin fraco, com 10 de vida, para lutar contra ele digite ");
+                            System.out.println(" '1' ou para sair, digite '2'");
+                            opcao = entradaDadosInt();
 
-                                if (opcao == 1) {
+                            if (opcao == 1) {
+                                System.out.println("Sua vida atual: " + vidaGuerreiro);
+                                System.out.println("Escolha uma habilidade para atacar o inimigo:");
+                                System.out.println("1 - Espada Gloriósa");
+                                System.out.println("2 - Escudo Divino ");
+                                combate = entradaDadosInt();
+                                if (combate == 1) {
+                                    goblin = goblin - habilidade1Guerreiro;
+                                    vidaGuerreiro = vidaGuerreiro - 5;
+                                    System.out.println("Vida do goblin: " + goblin);
+                                    System.out.println("Você derrotou o goblin!");
                                     System.out.println("Sua vida atual: " + vidaGuerreiro);
-                                    System.out.println("Escolha uma habilidade para atacar o inimigo:");
-                                    System.out.println("1 - Espadada");
-                                    System.out.println("2 - ");
-                                    combate = entradaDadosInt();
-                                    if (combate == 1) {
-                                        goblin = goblin - habilidade1Guerreiro;
-                                        System.out.println("Vida do goblin: " + goblin);
-                                        System.out.println("Você derrotou o goblin!");
-                                    } else if (opcao == 2) {
-                                        System.out.println("VocÊ fugiu de uma batalha! ");
-                                        break;
 
-                                    }
+                                } else if (combate == 2) {
+                                    goblin = goblin - habilidade2Guerreiro;
+                                    System.out.println("Vida do goblin: " + goblin);
+                                    System.out.println("Você derrotou o goblin!");
+                                } else if (opcao == 2) {
+                                    System.out.println("VocÊ fugiu de uma batalha! ");
+                                    break;
 
                                 }
 
-                            } else if (movimento.equalsIgnoreCase("sul")) {
-                                System.out.println("Você andou um passo para o sul");
                             }
+
+                        } else if (movimento.equalsIgnoreCase("sul")) {
+                            System.out.println("Você andou um passo para o sul");
+                            System.out.println("Você encontrou um baú, porém há um guardião por perto");
+                            System.out.println("terá que lutar contra ele para conseguir abrir o baú");
+                            System.out.println("O Guardião tem 50 pontos de vida ");
+
+                            do {
+                                combate = entradaDadosInt();
+
+                                if (combate == 1) {
+
+                                    System.out.println("Sua vida atual: " + vidaGuerreiro);
+                                    guardiao = guardiao - habilidade1Guerreiro;
+                                    vidaGuerreiro = vidaGuerreiro - 5;
+                                    System.out.println("Vida do guardião: " + guardiao);
+
+                                } else if (combate == 2) {
+
+                                    System.out.println("Sua vida atual: " + vidaGuerreiro);
+                                    guardiao = guardiao - habilidade2Guerreiro;
+                                    vidaGuerreiro = vidaGuerreiro - 15;
+                                    System.out.println("Vida do guardião: " + guardiao);
+
+                                }
+                            } while (guardiao > 0);
+                            System.out.println("Parabens, você derrotou o guardião e agora pode abrir o baú");
+                            System.out.println(" ** Você encontrou uma espada fortificada ** ");
+                            System.out.println(" * Espada equipada automaticamente * ");
+
                             break;
+
+                        }
 
                         case 2:
 
@@ -226,7 +265,7 @@ public class ProjetoIntegrador {
                                     break;
                                 } else if (opcao == 2) {
 
-                                    System.out.println("você para entrar na carroça de um mercador,");
+                                    System.out.println("você pede para entrar na carroça de um mercador,");
                                     System.out.println("Porem ele diz que só permitira você entrar se acertar seu enigma.");
                                     System.out.println("O que é, o que é? Mesmo atravessando o rio não se molha.");
                                     String enigma = entradaDadosString();
@@ -255,22 +294,17 @@ public class ProjetoIntegrador {
                                         System.out.println("Parabens, você acertou, pode entrar na carroça,");
                                         System.out.println("Você entrou na cidade.");
                                         break;
+                                    }else{
+                                        System.out.println("Você errou o enigma do dono da carroça e foi pego pelos guradas.");
+                                        System.exit(0);
+                                        
                                     }
 
                                 }
 
-                                System.out.println("Agora que você entrou na cidade você pode finalizar sua aventura");
-                                System.out.println("ou");
-                                System.out.println("Você se junta ao reino para impedir um ataque do reino inimigo");
-                                System.out.println("1 para se juntar ao reino ou 2 para finalizar sua aventura");
-                                opcao = entradaDadosInt();
-
-                                if (opcao == 1) {
-                                    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-                                    
-                                    System.out.println("Parabens por finalizar o jogo.");
+                                System.out.println("você conseguiu entrar na cidade");
+                                    System.out.println("Parabens por finalizar essa história.");
                                     System.exit(0);
-                                }
 
                             } else if (movimento.equalsIgnoreCase("sul")) {
                                 System.out.println("Você andou um passo para o sul");
@@ -297,7 +331,7 @@ public class ProjetoIntegrador {
                                             System.out.println("Sua vida atual: " + vidaLadrao);
                                             javalis = javalis - habilidade1Ladrao;
                                             System.out.println("o javali revidou o seu ataque");
-                                            vidaLadrao = vidaLadrao - 10;
+                                            vidaLadrao = vidaLadrao - javalisatk;
                                             System.out.println("Sua vida atual: " + vidaLadrao);
                                             System.out.println("Vida do javali: " + javalis);
 
@@ -306,7 +340,7 @@ public class ProjetoIntegrador {
                                             System.out.println("Sua vida atual: " + vidaLadrao);
                                             javalis = javalis - habilidade2Ladrao;
                                             System.out.println("o javali revidou o seu ataque");
-                                            vidaLadrao = vidaLadrao - 10;
+                                            vidaLadrao = vidaLadrao - javalisatk;
                                             System.out.println("Sua vida atual: " + vidaLadrao);
                                             System.out.println("Vida do javali: " + javalis);
                                         }
@@ -319,6 +353,22 @@ public class ProjetoIntegrador {
 
                             break;
                         case 3:
+                            
+                            int magia1,
+                            magia2,
+                            arqueiro,
+                            arqatk,
+                            urso,
+                            ursoatk,
+                            vidaMago;
+                            magia1 = 20;
+                            magia2 = 10;
+                            arqueiro = 30;
+                            arqatk = 10;
+                            urso = 60;
+                            ursoatk = 20;
+                            vidaMago = 40;
+                            
                             System.out.println("MAGO SELECIONADO ");
                             System.out.println("Você nascera em um centro de treinamento para ");
                             System.out.println("aprender os conceitos basicos do jogo, tais como andar, ");
@@ -329,13 +379,75 @@ public class ProjetoIntegrador {
 
                             if (movimento.equalsIgnoreCase("norte")) {
                                 System.out.println("Você andou um passo para o norte");
+                                System.out.println("Encontrou um urso, terá que lutar contra ele para seguir em frente!! ");
+                                System.out.println("urso tem 60 de vida e 20 dano de atk ");
+                                System.out.println("Escolha uma habilidade para ataca-lo: ");
+                                System.out.println("1 - magia de fogo");
+                                System.out.println("2 - magia de gelo, magia de gelo impede que o inimigo te ataque");
+
+                                do {
+                                    combate = entradaDadosInt();
+
+                                    if (combate == 1) {
+                                        System.out.println("Sua vida atual: " + vidaMago);
+                                        urso = urso - magia1;
+                                        System.out.println("o urso revidou o seu ataque");
+                                        vidaMago = vidaMago - ursoatk;
+                                        System.out.println("Sua vida atual: " + vidaMago);
+                                        System.out.println("Vida do urso: " + urso);
+
+                                    } else if (combate == 2) {
+
+                                        System.out.println("Sua vida atual: " + vidaMago);
+                                        urso = urso - magia2;
+                                        System.out.println("Vida do urso: " + urso);
+                                    }
+
+                                } while (urso > 0);
+                                System.out.println("Você derrotou o urso e pode seguir sua jornada!!!");
 
                             } else if (movimento.equalsIgnoreCase("sul")) {
                                 System.out.println("Você andou um passo para o sul");
+                                System.out.println("Encontrou um arqueiro do reino inimigo, terá que lutar contra ele para seguir em frente!! ");
+                                System.out.println("o arqueiro tem 30 de vida e 10 dano de atk ");
+                                System.out.println("Escolha uma habilidade para ataca-lo: ");
+                                System.out.println("1 - magia de fogo");
+                                System.out.println("2 - magia de gelo, magia de gelo impede que o inimigo te ataque");
+
+                                do {
+                                    combate = entradaDadosInt();
+
+                                    if (combate == 1) {
+                                        System.out.println("Sua vida atual: " + vidaMago);
+                                        arqueiro = arqueiro - magia1;
+                                        System.out.println("o arqueiro revidou o seu ataque");
+                                        vidaMago = vidaMago - arqatk;
+                                        System.out.println("Sua vida atual: " + vidaMago);
+                                        System.out.println("Vida do arqueiro: " + arqueiro);
+
+                                    } else if (combate == 2) {
+
+                                        System.out.println("Sua vida atual: " + vidaMago);
+                                        arqueiro = arqueiro - magia2;
+                                        System.out.println("Vida do arqueiro: " + arqueiro);
+                                    }
+
+                                } while (urso > 0);
+                                System.out.println("Você derrotou o arqueiro inimigo e pode seguir sua jornada!!!");
                             }
 
                             break;
                         case 4:
+                            
+                            int vidaAti,
+                             arco,
+                             hobgoblin,
+                             hgatk;
+                            vidaAti = 40;
+                            arco = 20;
+                            hobgoblin = 80;
+                            hgatk = 40;
+                            
                             System.out.println("ATIRADOR SELECIONADO ");
                             System.out.println("Você nascera em um centro de treinamento para ");
                             System.out.println("aprender os conceitos basicos do jogo, tais como andar, ");
@@ -346,29 +458,163 @@ public class ProjetoIntegrador {
 
                             if (movimento.equalsIgnoreCase("norte")) {
                                 System.out.println("Você andou um passo para o norte");
+                                System.out.println("encontrou um hobgoblin, com 80 de vida e 40 de dano de atk,");
+                                System.out.println(" digite '1' para lutar com ele ou digite '2' para fugir");
+                                opcao = entradaDadosInt();
 
+                                if (opcao == 1) {
+                                    System.out.println("Sua vida atual: " + vidaAti);
+                                    System.out.println("Escolha uma habilidade para atacar o inimigo:");
+                                    System.out.println("1 - use uma flecha");
+                                    combate = entradaDadosInt();
+                                    if (combate == 1) {
+                                        hobgoblin = hobgoblin - arco;
+                                        System.out.println("Vida do hobgoblin: " + hobgoblin);
+                                        System.out.println("o hobgoblin revidou o seu ataque");
+                                        vidaAti = vidaAti - hgatk;
+                                        System.out.println("Sua vida atual: " + vidaAti);
+                                        System.out.println("Você perdeu para o hobgoblin!");
+                                        System.exit(0);
+                                        
+                                    } else if (opcao == 2) {
+                                        System.out.println("VocÊ fugiu de uma batalha! ");
+                                        break;
+
+                                    }
+                                }
                             } else if (movimento.equalsIgnoreCase("sul")) {
                                 System.out.println("Você andou um passo para o sul");
+                                System.out.println("você encontra uma sala secreta com um arco escondido la dentro,");
+                                System.out.println("Porem para entrar você tem que acertar um enigma gravado em suas paredes.");
+                                System.out.println("O que é, o que é? Pode passar diante do sol sem fazer sombra?");
+                                String enigma = entradaDadosString();
+                                
+                                if (enigma.equalsIgnoreCase("Vento")) {
+                                        System.out.println("Parabens, você acertou,");
+                                        System.out.println("Com isso você entrou na sala e pegou o seu novo arco");
+                                        break;
+                                    } else if (enigma.equalsIgnoreCase("vento")) {
+                                        System.out.println("Parabens, você acertou,");
+                                        System.out.println("Com isso você entrou na sala e pegou o seu novo arco");
+                                        break;
+                                    } else if (enigma.equalsIgnoreCase("VENTO")) {
+                                        System.out.println("Parabens, você acertou,");
+                                        System.out.println("Com isso você entrou na sala e pegou o seu novo arco");
+                                        break;
+                                    } else if (enigma.equalsIgnoreCase("O VENTO")) {
+                                        System.out.println("Parabens, você acertou,");
+                                        System.out.println("Com isso você entrou na sala e pegou o seu novo arco");
+                                        break;
+                                    } else if (enigma.equalsIgnoreCase("O Vento")) {
+                                        System.out.println("Parabens, você acertou,");
+                                        System.out.println("Com isso você entrou na sala e pegou o seu novo arco");
+                                        break;
+                                    } else if (enigma.equalsIgnoreCase("o vento")) {
+                                        System.out.println("Parabens, você acertou,");
+                                        System.out.println("Com isso você entrou na sala e pegou o seu novo arco");
+                                        break;
+                                    }else{
+                                        System.out.println("Você errou o enigma da sala secreta,");
+                                        System.out.println("O Guardião da sala retornou ao seu posto e te eliminou.");
+                                        System.exit(0);
+                                        
+                                    }
+                                
                             }
-
+                            
                             break;
                         case 5:
-                            System.out.println("LUTADOR SELECIONADO ");
-                            System.out.println("Você nascera em um centro de treinamento para ");
-                            System.out.println("aprender os conceitos basicos do jogo, tais como andar, ");
-                            System.out.println("escolher itens dropados pelos monstros da floresta e usar ");
-                            System.out.println("seus equipamentos. ");
-                            System.out.println("para andar um passo, digite norte ou sul: ");
-                            movimento = entradaDadosString();
+                        System.out.println("LUTADOR SELECIONADO ");
+                        System.out.println("Poderes do lutador: ");
+                        System.out.println("* Punho dos Deuses: causa 20 de dano, porém recebe 5 de dano ao conjurar;");
+                        System.out.println("* Chute Celeste: causa 15 de dano, podérm recebe 3 de dano ao conjutar.");
+                        System.out.println("Você nascera em um centro de treinamento para ");
+                        System.out.println("aprender os conceitos basicos do jogo, tais como andar, ");
+                        System.out.println("escolher itens dropados pelos monstros da floresta e usar ");
+                        System.out.println("seus equipamentos. ");
+                        System.out.println("para andar um passo, digite norte ou sul: ");
+                        movimento = entradaDadosString();
 
-                            if (movimento.equalsIgnoreCase("norte")) {
-                                System.out.println("Você andou um passo para o norte");
+                        int vidaLutador,
+                         habilidade1Lutador,
+                         habilidade2Lutador,
+                         harpia, tita;
 
-                            } else if (movimento.equalsIgnoreCase("sul")) {
-                                System.out.println("Você andou um passo para o sul");
-                            }
+                        vidaLutador = 130;
+                        habilidade1Lutador = 15;
+                        habilidade2Lutador = 5;
+                        tita = 100;
+                        harpia = 50;
 
+                        if (movimento.equalsIgnoreCase("norte")) {
+                            System.out.println("Você andou um passo para o norte");
+                            System.out.println("Andando pelo norte da florest você se deparou com harpias ");
+                            System.out.println("e terá que passar por elas para continuar em frente!!");
+                            System.out.println("* Vida da Harpia * " + harpia);
+                            System.out.println("Escolha a habilidade para atacar: ");
+                            System.out.println("1 - Punho dos Deuses");
+                            System.out.println("2 - Chute Celeste");
+                            do {
+                                combate = entradaDadosInt();
+
+                                if (combate == 1) {
+                                    System.out.println("Sua vida atual: " + vidaLutador);
+                                    harpia = harpia - habilidade1Lutador;
+                                    System.out.println("A harpia revidou o seu ataque");
+                                    vidaLutador = vidaLutador - 5;
+                                    System.out.println("Sua vida atual: " + vidaLutador);
+                                    System.out.println("Vida da harpia: " + harpia);
+
+                                } else if (combate == 2) {
+
+                                    System.out.println("Sua vida atual: " + vidaLutador);
+                                    harpia = harpia - habilidade2Lutador;
+                                    System.out.println("A harpia revidou o seu ataque");
+                                    vidaLutador = vidaLutador - 3;
+                                    System.out.println("Sua vida atual: " + vidaLutador);
+                                    System.out.println("Vida da harpia: " + harpia);
+                                }
+
+                            } while (harpia > 0);
+                            System.out.println("A Harpia dropou uma armadura");
+                            System.out.println(" * Armadura equipada automaticamente * ");
+                            System.out.println("Parabens, você derrotou a harpia e poderá seguir em frete!! ");
                             break;
+
+                        } else if (movimento.equalsIgnoreCase("sul")) {
+                            System.out.println("Você andou um passo para o sul");
+                            System.out.println("Andando pelo sul da floresta você encontrou um titã colossal ");
+                            System.out.println("e terá que passar por ele para seguir em frente !");
+                            System.out.println("Escolha a habilidade para atacar: ");
+                            System.out.println("1 - Punho dos Deuses");
+                            System.out.println("2 - Chute Celeste");
+
+                            do {
+                                combate = entradaDadosInt();
+
+                                if (combate == 1) {
+                                    System.out.println("Sua vida atual: " + vidaLutador);
+                                    tita = tita - habilidade1Lutador;
+                                    System.out.println("o titã revidou o seu ataque");
+                                    vidaLutador = vidaLutador - 10;
+                                    System.out.println("Sua vida atual: " + vidaLutador);
+                                    System.out.println("Vida do titã: " + tita);
+
+                                } else if (combate == 2) {
+
+                                    System.out.println("Sua vida atual: " + vidaLutador);
+                                    tita = tita - habilidade2Lutador;
+                                    System.out.println("o titã revidou o seu ataque");
+                                    vidaLutador = vidaLutador - 10;
+                                    System.out.println("Sua vida atual: " + vidaLutador);
+                                    System.out.println("Vida do tita: " + tita);
+                                }
+                                System.out.println("Parabéns, você derrotou o Titã e pode seguir em frente!! ");
+
+                            } while (tita > 0);
+                        }
+
+                        break;
                         case 6:
 
                             int poder1 = 15,
@@ -474,24 +720,18 @@ public class ProjetoIntegrador {
                             }
                     }
 
-        
-
                 } else if (menu == 2) {
                 System.out.println("Muito Obrigado por jogar o nosso jogo.\nEsse jogo foi desenvolvido e criado pelos alunos da turma B,\nEric Alves Melo\nFelipe Müller da Costa\nGuilherme Mikami\nHenrique Dos Santos Carvalho");
-                /*contador para sair da tela de créditos*/
- /*main(args); */ /*voltar para o inicio na main*/
+                System.exit(0);
             } else {
                 System.out.println("Opção invalida");
-                /*main(args); */ /*voltar para o inicio na main*/
-
+                System.exit(0);
             }
 
             }
 
             while (menu > 2 || menu < 1);
         }
-
-     
 
     static String entradaDadosString() {
         Scanner input = new Scanner(System.in);
